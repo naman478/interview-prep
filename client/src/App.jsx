@@ -13,7 +13,7 @@ import PastInterviews from './pages/PastInterviews';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
 // Set up axios defaults
-axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+axios.defaults.baseURL = 'https://interview-prep-cytc.onrender.com' || 'http://localhost:5000';
 
 function App() {
   return (

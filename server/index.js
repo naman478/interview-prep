@@ -11,7 +11,13 @@ const app = express();
 const PORT = process.env.PORT;
 
 // Middleware
-app.use(cors());
+const allowedOrigins = ['https://interview-prep-ivory-delta.vercel.app/'];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true,
+}));
+
 app.use(express.json());
 
 // Routes
